@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tom Geheb">
+    <meta name="copyright" content="Tom Geheb">
+    <title>Kredit Variabel</title>
+	  <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+	  <link rel="shortcut icon" type="image/png" href="favicon.ico" size="32x32">
+  </head>
+<body>
+<div class="center">
+<form class = "calculator" name="rateCalculator">
+<div class="calculatorDiv">
+<input name="description" class="cDescription" onkeyup="UpdateTitle(this.form)" ondblclick="UpdateBackgroundURL">
+  <div id="costs">
+    <table class="formattedTable">
+      <tr><td class="LeftColumnWidth">Anlagenpreis</td><td><input name="Price" id="in1"></td><td class="RightColumnWidth"> €</td></tr>
+      <tr><td>Kredit-Laufzeit</td><td><input name="duration"></td><td class="RightColumnWidth"> Jahre</td></tr>
+      <tr><td>Zinssatz</td><td><input name="interest"></td><td class="RightColumnWidth"> %</td></tr>
+    </table>
+    <table class="formattedTable">
+      <tr><td class="LeftColumnWidth">Cloudgebühr</td><td><input name="cloudFee"></td><td class="RightColumnWidth"> € je Monat</td></tr>
+      <tr><td class="LeftColumnWidth">Einspeisevergütung</td><td><input name="compensation"></td><td class="RightColumnWidth"> € je Jahr</td></tr>
+    </table>
+  </div>
+  <table class="MonthlyCosts">
+    <tr><td class="LeftColumnWidth">Monatliche Kosten</td><td><input id="solution" name="solution"></td><td class="RightColumnWidth"> <input type="button" class="myButton" value="€" onclick="compute(this.form)"></td></td>
+  </table>
+    <div id="Diagramm">
+        <table class="formattedTable">
+            <tr><td class="LeftColumnWidth">Verbrauch </td> <td> <input name="currentConsumption"></td><td class="RightColumnWidth"> kWh im Jahr</td> </tr>
+            <tr><td class="LeftColumnWidth">Ertrag PV-Anlage</td> <td> <input id="generatedOutput" name="generatedOutput"> </td> <td class="RightColumnWidth"> kWh im Jahr</td> </tr>
+        </table>
+    <div name="CurrentConsumptionBar" id="CurrentConsumptionBar">
+        Verbrauch
+    </div>
+    <div id="wrapper">
+        <div name="BarChart" id="BarChart">mit Photovoltaik</div>
+        <div name="EnBW" id="EnBW"></div>
+    </div>
+    <div id="LegendWrapper">
+    <div name="EnbwLegendColor" id="EnbwLegendColor"></div>
+    <p name="EnbwLegendText" id="EnbwLegendText"> Deckung durch EnBW </p>
+  </div>
+  <textarea spellcheck="false" placeholder="Anmerkungen..."></textarea>
+</form>
+</div>
+
+ </body>
+</html>
