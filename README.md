@@ -12,3 +12,5 @@ If the Produced Power from the Solar-Generator is less than the actual Consumpti
 Interests possible from 0.0 per cent (customer is buying without any credit) and also with multiple digits after the comma.
 
 With this Calculator it is possible to display results to the costumer and also (and often more important) being able to re-calculate the offer after changing conditions like discounts or so.
+
+![javascript_calculator](https://user-images.githubusercontent.com/86618664/127682541-7983ee84-aaac-4fa9-8d69-d4bd315d4252.png)
