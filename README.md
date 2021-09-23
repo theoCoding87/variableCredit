@@ -1,5 +1,5 @@
 # variableCredit
-Calculate monthly Annuity using JavaScript
+Calculate monthly Annuity using vanilla JavaScript
 
 By entering a Character in the first field as the Name of the Customer, the Title of the Tab is directly changed.
 This makes it possible to calculate multiple offers with concrete facts, displaying a specific Fee to the Customer.
